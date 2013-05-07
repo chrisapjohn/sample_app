@@ -14,8 +14,10 @@
         <div class="alert alert-<%= key %>"><%= value %></div>
       <% end %>
       <%= yield %>
+      <!-- Debug information in dev mode:
       <%= render 'layouts/footer' %>
       <%= debug(params) if Rails.env.development? %>
+      -->
     </div>
   </body>
 </html>
